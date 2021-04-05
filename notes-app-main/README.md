@@ -7,13 +7,13 @@ You can add, delete and archive tasks
 -Go to github account;
 -Download the files;
 -Unzip them;
--Open you command promt;
+-Open you command prompt;
 -Type "npm init";
 -Type "node app".
 
 # 3. Node modules
 
-# 4. https://github.com/00010123/CW.Web.10123
+# 4. https://github.com/00010123/WebTech10123
 
 #### Link to the application on Glitch
 
