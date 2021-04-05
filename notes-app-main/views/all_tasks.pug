@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  main.all-tasks     
+    if tasks.length
+      ul.tasks
+        each task in tasks
+          li.task-item 
+            a(href=`tasks/${ task.id }`)= task.title
+            a.delete-task(href=`tasks/${ task.id }/delete`) Delete
+    else
+      p.empty No any task yet

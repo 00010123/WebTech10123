@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  main.all-tasks  
+    h2.task-title= task.title
+      if !task.archive
+        a.archive-link(href=`/tasks/${ task.id }/archive`) Archive task
+    p.task-body#body= task.body 
+    
+    
+    script(type="text/javascript").
+      window.onload = function () {
+        document.getElementById('body').innerHTML = marked(document.getElementById('body').innerHTML);
+      }
